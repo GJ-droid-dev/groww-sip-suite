@@ -1,0 +1,19 @@
+{
+  "user_name": "Aarav Sharma",
+  "tenure_months": 5,
+  "scheme_name": "Parag Parikh Flexi Cap Fund - Direct Growth",
+  "monthly_installment": 5000.0,
+  "debit_date": 5,
+  "linked_bank": "HDFC Bank (Salary Account ****1234)",
+  "total_invested": 25000.0,
+  "current_value": 24420.0,
+  "nominal_return_pct": -2.32,
+  "nominal_return_abs": -580.0,
+  "total_units_accumulated": 68.42,
+  "latest_nav": 356.91,
+  "previous_month_nav": 382.40,
+  "streak_count": 5,
+  "streak_tier": "Silver Habit Streak",
+  "status": "Active"
+}
+
