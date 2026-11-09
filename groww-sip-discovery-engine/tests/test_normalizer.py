@@ -1,6 +1,6 @@
 import pytest
-from core.schemas import SourceType, InvestorTenure
-from core.normalizer import PIIScrubber, Deduplicator, infer_tenure_hint, normalize_record
+from discovery_core.schemas import SourceType, InvestorTenure
+from discovery_core.normalizer import PIIScrubber, Deduplicator, infer_tenure_hint, normalize_record
 
 
 def test_pii_scrubber_redacts_indian_pii():

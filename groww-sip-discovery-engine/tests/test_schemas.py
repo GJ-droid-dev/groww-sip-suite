@@ -1,5 +1,5 @@
 import pytest
-from core.schemas import (
+from discovery_core.schemas import (
     FailureCategory,
     SourceType,
     InvestorTenure,

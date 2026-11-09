@@ -7,9 +7,9 @@ and writes out the formal AI Evidence Log.
 import json
 import math
 from typing import List, Dict, Any
-from core.schemas import FailureCategory, SourceType, InvestorTenure, GoldenSetItem
-from core.engine import DiscoveryEngine
-from core.config import BENCHMARK_DIR, DOCS_DIR
+from discovery_core.schemas import FailureCategory, SourceType, InvestorTenure, GoldenSetItem
+from discovery_core.engine import DiscoveryEngine
+from discovery_core.config import BENCHMARK_DIR, DOCS_DIR
 
 # 20 hand-curated, grounded benchmark items
 GOLDEN_SET_DATA = [

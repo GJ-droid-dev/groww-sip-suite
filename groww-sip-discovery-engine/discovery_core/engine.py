@@ -10,14 +10,14 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 
-from core.schemas import (
+from discovery_core.schemas import (
     FailureCategory,
     InvestorTenure,
     CognitiveProfile,
     AnalysisResult,
     CATEGORY_LABELS,
 )
-from core.config import GEMINI_API_KEY, DEFAULT_MODEL
+from discovery_core.config import GEMINI_API_KEY, DEFAULT_MODEL
 
 
 class LLMStructuredOutput(BaseModel):

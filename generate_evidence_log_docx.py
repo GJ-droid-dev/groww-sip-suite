@@ -450,3 +450,4 @@ if __name__ == "__main__":
         "c:/Users/jangr/Documents/NextLeap/Project/Project2/Docs/AI_Evidence_Log.docx"
     ]
     create_evidence_log_docx(paths)
+

@@ -1,6 +1,6 @@
 import pytest
-from core.schemas import PortfolioState
-from core.assistant import PulseSIPEngine
+from mvp_core.schemas import PortfolioState
+from mvp_core.assistant import PulseSIPEngine
 
 
 @pytest.fixture

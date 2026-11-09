@@ -1,6 +1,6 @@
 import re
 from typing import Tuple
-from core.schemas import EvalGateVerdict
+from mvp_core.schemas import EvalGateVerdict
 
 # Regular expressions detecting attempts to solicit or provide specific stock/fund advice
 ADVICE_INTENT_PATTERNS = [

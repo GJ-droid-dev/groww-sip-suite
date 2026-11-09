@@ -1,5 +1,5 @@
 import pytest
-from core.eval_gate import EvalGate
+from mvp_core.eval_gate import EvalGate
 
 
 def test_eval_gate_passes_clean_cashflow_query():

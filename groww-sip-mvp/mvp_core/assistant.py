@@ -10,9 +10,9 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 
-from core.schemas import PortfolioState, AssistantResponse, EvalGateVerdict
-from core.eval_gate import EvalGate
-from core.config import GEMINI_API_KEY, DEFAULT_MODEL
+from mvp_core.schemas import PortfolioState, AssistantResponse, EvalGateVerdict
+from mvp_core.eval_gate import EvalGate
+from mvp_core.config import GEMINI_API_KEY, DEFAULT_MODEL
 
 
 class LLMAssistantOutput(BaseModel):

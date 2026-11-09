@@ -14,8 +14,8 @@ BASE_DIR = Path(__file__).resolve().parent
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
-from core.schemas import PortfolioState, AssistantResponse
-from core.assistant import PulseSIPEngine
+from mvp_core.schemas import PortfolioState, AssistantResponse
+from mvp_core.assistant import PulseSIPEngine
 
 try:
     st.set_page_config(
@@ -100,7 +100,12 @@ p = st.session_state.portfolio
 
 # Sidebar
 with st.sidebar:
-    st.image("https://assets-netstorage.groww.in/web-assets/big_groww_logo.png", width=170)
+    st.markdown("""
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+        <div style="background-color: #00D09C; width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 16px;">G</div>
+        <span style="font-size: 24px; font-weight: 800; color: #1E222B; letter-spacing: -0.5px;">GROWW</span>
+    </div>
+    """, unsafe_allow_html=True)
     st.markdown("### **PulseSIP Companion**")
     st.caption("**Growth Team · AI-Native MVP (Part 5)**")
     st.markdown("---")

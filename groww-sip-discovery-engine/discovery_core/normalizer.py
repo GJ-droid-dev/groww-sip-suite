@@ -1,7 +1,7 @@
 import re
 import hashlib
 from typing import Set, Tuple, Optional
-from core.schemas import UnifiedSIPRecord, SourceType, InvestorTenure
+from discovery_core.schemas import UnifiedSIPRecord, SourceType, InvestorTenure
 
 
 class PIIScrubber:

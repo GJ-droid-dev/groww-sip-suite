@@ -49,3 +49,4 @@ if ($LASTEXITCODE -eq 0) {
 } else {
     Write-Host "Push failed. Ensure you have created the empty repository on GitHub first at: https://github.com/new" -ForegroundColor Red
 }
+

@@ -71,3 +71,4 @@ git push -u origin main
 - The sidebar allows any reviewer or evaluator to toggle between:
   1. **Groww PulseSIP (AI Growth MVP)**: Live portfolio, unit discount reframing, 1-tap micro-flex, and SEBI-compliant assistant.
   2. **Groww SIP AI Discovery Engine**: 891 review corpus explorer, 7-mode taxonomy, and Golden Benchmark evaluation.
+

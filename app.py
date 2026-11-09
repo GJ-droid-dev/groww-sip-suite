@@ -11,8 +11,12 @@ import streamlit as st
 
 # Root directory configuration
 BASE_DIR = Path(__file__).resolve().parent
-if str(BASE_DIR) not in sys.path:
-    sys.path.insert(0, str(BASE_DIR))
+discovery_dir = BASE_DIR / "groww-sip-discovery-engine"
+mvp_dir = BASE_DIR / "groww-sip-mvp"
+
+for p in [discovery_dir, mvp_dir, BASE_DIR]:
+    if str(p) not in sys.path:
+        sys.path.insert(0, str(p))
 
 # Master Page Config (Only called once at root level)
 try:
@@ -42,7 +46,12 @@ st.markdown("""
 
 # Top Sidebar Navigation
 with st.sidebar:
-    st.image("https://assets-netstorage.groww.in/web-assets/big_groww_logo.png", width=160)
+    st.markdown("""
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+        <div style="background-color: #00D09C; width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 16px;">G</div>
+        <span style="font-size: 24px; font-weight: 800; color: #1E222B; letter-spacing: -0.5px;">GROWW</span>
+    </div>
+    """, unsafe_allow_html=True)
     st.markdown("### **Groww SIP Retention Suite**")
     st.caption("**12-Month Mutual Fund Continuation · Growth Team**")
     st.markdown("---")
@@ -60,15 +69,9 @@ with st.sidebar:
 
 # Execution Dispatcher
 if "PulseSIP" in app_choice:
-    mvp_dir = BASE_DIR / "groww-sip-mvp"
-    if str(mvp_dir) not in sys.path:
-        sys.path.insert(0, str(mvp_dir))
     mvp_script = mvp_dir / "app.py"
     runpy.run_path(str(mvp_script), run_name="__main__")
 
 else:
-    discovery_dir = BASE_DIR / "groww-sip-discovery-engine"
-    if str(discovery_dir) not in sys.path:
-        sys.path.insert(0, str(discovery_dir))
     discovery_script = discovery_dir / "app.py"
     runpy.run_path(str(discovery_script), run_name="__main__")

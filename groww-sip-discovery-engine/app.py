@@ -15,15 +15,15 @@ BASE_DIR = Path(__file__).resolve().parent
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
-from core.schemas import (
+from discovery_core.schemas import (
     FailureCategory,
     SourceType,
     InvestorTenure,
     CATEGORY_LABELS,
     CATEGORY_DESCRIPTIONS,
 )
-from core.engine import DiscoveryEngine
-from core.config import PROCESSED_DATA_DIR, BENCHMARK_DIR, DOCS_DIR
+from discovery_core.engine import DiscoveryEngine
+from discovery_core.config import PROCESSED_DATA_DIR, BENCHMARK_DIR, DOCS_DIR
 
 try:
     st.set_page_config(
@@ -104,7 +104,12 @@ engine = get_discovery_engine()
 
 # Sidebar Navigation & Context
 with st.sidebar:
-    st.image("https://assets-netstorage.groww.in/web-assets/big_groww_logo.png", width=180)
+    st.markdown("""
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+        <div style="background-color: #00D09C; width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 900; font-size: 16px;">G</div>
+        <span style="font-size: 24px; font-weight: 800; color: #1E222B; letter-spacing: -0.5px;">GROWW</span>
+    </div>
+    """, unsafe_allow_html=True)
     st.markdown("### **SIP Discovery Engine**")
     st.caption("**Growth Team · NextLeap PM Fellowship**")
     st.markdown("---")

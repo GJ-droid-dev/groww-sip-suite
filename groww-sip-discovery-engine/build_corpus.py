@@ -8,9 +8,9 @@ import json
 import random
 from datetime import datetime, timedelta
 from pathlib import Path
-from core.schemas import SourceType, FailureCategory, InvestorTenure
-from core.normalizer import Deduplicator, normalize_record
-from core.config import RAW_DATA_DIR, PROCESSED_DATA_DIR
+from discovery_core.schemas import SourceType, FailureCategory, InvestorTenure
+from discovery_core.normalizer import Deduplicator, normalize_record
+from discovery_core.config import RAW_DATA_DIR, PROCESSED_DATA_DIR
 
 # Seed for deterministic reproducibility
 random.seed(42)
